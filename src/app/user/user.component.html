@@ -1,0 +1,15 @@
+<h5> Login Form </h5>
+<input 
+ type="text"
+ class="form-control"
+ (change)="onChangeofTextFieldData($event)"
+ [(ngModel)] = "username"
+/>
+
+
+
+<p> Username entered : {{username}} </p>
+
+<button
+class="btn btn-primary"
+[disabled]="buttonDisabled" (click)="onFormSubmission()">Submit</button>
